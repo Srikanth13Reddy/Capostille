@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.NotificationActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="?actionBarSize">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="14sp"
+            android:layout_marginEnd="14sp"
+            android:onClick="back"
+            android:id="@+id/back_n"
+            android:src="@drawable/ic_arrow_back_black_24dp"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:text="Notifications"
+            android:layout_toRightOf="@id/back_n"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="12sp"
+            android:layout_marginEnd="12sp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_height="wrap_content"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="100dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/note_button"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="12sp"
+            android:text="Read All"
+            android:onClick="readAll"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:layout_marginStart="12sp"
+            android:layout_height="35dp"/>
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/rv_notification"
+        android:layout_marginTop="?actionBarSize"
+        android:layout_height="match_parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/notfound_textview_Style"
+        android:text="No Notifications Available"
+        android:id="@+id/tv_noti_notfound"/>
+
+</RelativeLayout>

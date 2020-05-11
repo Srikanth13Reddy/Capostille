@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activities.LoginActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:layout_marginTop="24dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/sspbold"
+                android:text="@string/sign_in_with_email"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                style="@style/editText_Style"
+                android:hint="@string/email"
+                android:inputType="text"
+                android:id="@+id/login_email_tv"
+                android:layout_marginTop="48dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="24dp"
+                android:layout_height="wrap_content">
+                <androidx.appcompat.widget.AppCompatEditText
+                    style="@style/editText_Style"
+                    android:hint="@string/password"
+                    android:id="@+id/logon_pass_tv"
+                    android:inputType="textPassword"/>
+
+                <CheckBox
+                    style="@style/checkbox_Style"
+                    android:id="@+id/log_checkBox"/>
+            </RelativeLayout>
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                style="@style/Button_Style"
+                android:layout_marginTop="48dp"
+                android:layout_marginBottom="48dp"
+                android:text="@string/sign_in"
+                android:onClick="login"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:textAlignment="center"
+                android:fontFamily="@font/sspregular"
+                android:textSize="20sp"
+                android:onClick="forgotPassword"
+                android:textColor="@color/text_color"
+                android:text="@string/forgot_password"
+                android:layout_height="45dp"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+ <androidx.appcompat.widget.AppCompatImageView
+     android:layout_width="match_parent"
+     app:srcCompat="@mipmap/loin_img"
+     android:layout_marginBottom="24dp"
+     android:layout_alignParentBottom="true"
+     android:layout_height="200dp"/>
+
+</RelativeLayout>

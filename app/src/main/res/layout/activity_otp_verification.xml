@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".activities.OtpVerificationActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="match_parent">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:src="@drawable/otp_verification"
+            android:layout_height="300dp"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:text="Otp Verification"
+            android:textColor="@color/black"
+            android:textSize="24dp"
+            android:fontFamily="@font/sspbold"
+            android:layout_height="wrap_content"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:id="@+id/tv_text"
+            android:layout_marginTop="12dp"
+            android:text="@string/otp_text"
+            android:layout_height="wrap_content"/>
+        <com.mukesh.OtpView android:id="@+id/otp_view"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginTop="48dp"
+            android:inputType="number"
+            style="@style/AppTheme"
+            android:textColor="@color/black"
+            app:itemCount="6"
+            android:cursorVisible="true"
+            android:lineSpacingExtra="10dp"
+            app:lineColor="@color/colorPrimary"
+            app:viewType="line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="12dp"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:text="Didn't receive OTP?"
+                android:layout_height="wrap_content"/>
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:text="RESEND OTP"
+                android:layout_marginStart="5dp"
+                android:textSize="16sp"
+                android:onClick="resendOTP"
+                android:textColor="#2196F3"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+        <Button
+            android:layout_width="match_parent"
+            style="@style/Button_Style"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:text="verify"
+            android:onClick="verifyOTP"
+            android:id="@+id/btn_verify"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

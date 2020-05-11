@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/background"
+    android:layout_height="match_parent"
+    tools:context=".activities.HomeActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="150dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/app_icon_m"
+                    android:tint="@color/white"
+                    android:layout_height="30dp"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:onClick="notification"
+                    android:layout_marginStart="12dp"
+                    android:tint="@color/white"
+                    android:layout_marginEnd="12dp"
+                    android:src="@drawable/ic_notifications_none_black_24dp"
+                    android:layout_height="30dp"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="22dp"
+                    android:text="0"
+                    android:id="@+id/not_count"
+                    android:textSize="10dp"
+                    android:textStyle="bold"
+                    android:onClick="notification"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:backgroundTint="@color/white"
+                    android:textColor="@color/red"
+                    android:background="@drawable/rounded_textview"
+                    android:layout_alignParentEnd="true"
+                    android:layout_height="22dp"/>
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_home" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

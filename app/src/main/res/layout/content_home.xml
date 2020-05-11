@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:background="@color/white"
+    tools:showIn="@layout/app_bar_home"
+    tools:context=".activities.HomeActivity">
+<!--    <androidx.appcompat.widget.AppCompatImageView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:src="@drawable/app_icon_m"-->
+<!--        android:id="@+id/main_icon"-->
+<!--        android:visibility="gone"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_margin="25dp"-->
+<!--        android:layout_height="30dp"/>-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_height="match_parent">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:textColor="@color/text_color"
+                android:textSize="22sp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/sspregular"
+                android:text="@string/welcome"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/sspbold"
+                android:id="@+id/tv_name_home"
+                android:text="Srikanth Reddy"
+                android:layout_height="wrap_content"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/main_edit_text"
+                android:layout_height="50dp">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Total Requested Files"
+                    android:layout_marginStart="12dp"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/sspbold"
+                    android:layout_marginEnd="12dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_height="wrap_content"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="0"
+                    android:layout_marginStart="12dp"
+                    android:textSize="18dp"
+                    android:id="@+id/tv_count"
+                    android:layout_marginEnd="12dp"
+                    android:fontFamily="@font/sspbold"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="24dp"
+                android:id="@+id/rv_notary"
+                android:visibility="gone"
+                android:background="@drawable/main_edit_text"
+                android:layout_height="50dp">
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Your Notary Members"
+                    android:layout_marginStart="12dp"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/sspbold"
+                    android:layout_marginEnd="12dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_height="wrap_content"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="0"
+                    android:layout_marginStart="12dp"
+                    android:textSize="18dp"
+                    android:id="@+id/tv_notary_count"
+                    android:layout_marginEnd="12dp"
+                    android:fontFamily="@font/sspbold"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="24dp"
+                android:layout_alignParentBottom="true"
+                android:paddingBottom="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+
+                    android:weightSum="2"
+                    android:padding="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/myser"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:onClick="request"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/request_box">
+
+
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="80dp"
+                            android:layout_height="46dp"
+                            android:src="@drawable/request">
+
+
+                        </androidx.appcompat.widget.AppCompatImageView>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Requests"
+                            android:fontFamily="@font/sspregular"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center_horizontal"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="16dp">
+
+                        </androidx.appcompat.widget.AppCompatTextView>
+
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/mservices"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:onClick="process"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/processing_box">
+
+
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="80dp"
+                            android:layout_height="46dp"
+                            android:src="@drawable/processing">
+
+                        </androidx.appcompat.widget.AppCompatImageView>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Processing"
+                            android:fontFamily="@font/sspregular"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center_horizontal"
+                            android:textColor="@color/processing"
+                            android:textSize="16dp">
+
+                        </androidx.appcompat.widget.AppCompatTextView>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:weightSum="2"
+                    android:padding="5dp"
+                    android:layout_marginBottom="30dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/avservice"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical"
+                        android:onClick="pending"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/pending_box">
+
+
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="80dp"
+                            android:layout_height="46dp"
+                            android:src="@drawable/pending">
+
+
+                        </androidx.appcompat.widget.AppCompatImageView>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Pending"
+                            android:fontFamily="@font/sspregular"
+                            android:gravity="center_horizontal"
+                            android:layout_marginTop="8dp"
+                            android:textColor="@color/pending"
+                            android:textSize="16dp">
+
+                        </androidx.appcompat.widget.AppCompatTextView>
+
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/profile"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:onClick="complete"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/complete_box">
+
+
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="80dp"
+                            android:tint="@color/complete"
+                            android:layout_height="46dp"
+                            android:src="@drawable/complete">
+
+
+                        </androidx.appcompat.widget.AppCompatImageView>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Completed"
+                            android:fontFamily="@font/sspregular"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center_horizontal"
+                            android:textColor="@color/complete"
+                            android:textSize="16dp">
+
+                        </androidx.appcompat.widget.AppCompatTextView>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+</RelativeLayout>

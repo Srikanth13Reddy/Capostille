@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rv_profile"
+        android:layout_marginTop="12dp"
+        android:background="@color/colorPrimary"
+        android:layout_height="120dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image_nav"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="12dp"
+            android:src="@drawable/profile"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:text="Srikanth Reddy"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="12dp"
+            android:textSize="22sp"
+            android:id="@+id/tv_n_name"
+            android:textStyle="bold"
+            android:fontFamily="@font/sspbold"
+            android:textColor="@color/white"
+            android:layout_toRightOf="@id/profile_image_nav"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/rv_profile"
+        android:background="@color/white"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center|start"
+            android:id="@+id/ll_profile"
+            android:layout_marginTop="16dp"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageView
+                style="@style/Nav_ImageView"
+                android:src="@drawable/profile_"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/Nav_TextView"
+                android:text="Profile"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/colorPrimaryDark"
+            android:layout_height="0.5dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center|start"
+            android:id="@+id/ll_home"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageView
+                style="@style/Nav_ImageView"
+                android:src="@drawable/ic_home_black_24dp"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/Nav_TextView"
+                android:text="Home"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/colorPrimaryDark"
+            android:layout_height="0.5dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center|start"
+            android:id="@+id/ll_account"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageView
+                style="@style/Nav_ImageView"
+                android:src="@drawable/plan"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/Nav_TextView"
+                android:text="Account"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/colorPrimaryDark"
+            android:layout_height="0.5dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center|start"
+            android:id="@+id/ll_hlogout"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageView
+                style="@style/Nav_ImageView"
+                android:src="@drawable/ic_exit_to_app_black_24dp"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/Nav_TextView"
+                android:text="Logout" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/colorPrimaryDark"
+            android:layout_height="0.5dp"/>
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

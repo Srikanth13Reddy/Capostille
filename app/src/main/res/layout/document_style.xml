@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:gravity="center|left"
+    android:layout_height="40dp">
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_marginStart="12dp"
+        android:id="@+id/doc_img"
+        android:layout_marginEnd="12dp"
+        android:src="@drawable/request"
+        android:layout_height="24dp"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:text="Birth Certificate"
+        android:textSize="16dp"
+        android:id="@+id/doc_tv_title"
+        android:textColor="@color/text_color"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

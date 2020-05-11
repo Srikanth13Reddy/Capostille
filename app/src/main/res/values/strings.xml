@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Capostille</string>
+    <string name="sign_in_with_email">Sign in with email</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password ?</string>
+    <string name="sign_in">Sign in</string>
+    <string name="welcome">Welcome</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="forgrt_text">
+<![CDATA[
+ We will send you <b><font color="black">One Time Password</font></b>
+]]>
+</string>
+
+    <string name="otp_text">
+<![CDATA[
+ Enter the OTP sent to <b><font color="black">example@gmail.com</font></b>
+]]>
+</string>
+    <string name="email">Email</string>
+    <string name="change_password">Change Password</string>
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="enter_new_phone_number">Enter New Phone Number</string>
+    <string name="street">Address Line1</string>
+    <string name="apartment">Address Line2</string>
+    <string name="city">City</string>
+    <string name="country">Country</string>
+    <string name="state">State</string>
+    <string name="postal_code">Postal Code</string>
+    <string name="save">Save</string>
+    <string name="change_address">Change Address</string>
+    <string name="shipping_address">Shipping Address</string>
+    <string name="documents_type">Documents Type</string>
+    <string name="file_list">File List</string>
+    <string name="no_completed_documents">No Completed Documents</string>
+    <string name="no_processing_documents">No Processing Documents</string>
+    <string name="no_pending_documents">No Pending Documents</string>
+    <string name="no_requested_documents">No Requested Documents</string>
+    <string name="inprogress">Inprogress</string>
+    <string name="pending">Pending</string>
+    <string name="completed">Completed</string>
+    <string name="read_all">Read All</string>
+
+</resources>

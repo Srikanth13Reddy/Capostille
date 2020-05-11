@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".activities.AccountActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="12dp"
+        android:id="@+id/rl_pass"
+        android:layout_marginTop="24dp"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:text="@string/change_password"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:fontFamily="@font/sspregular"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="20dp"
+            android:id="@+id/iv_right"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/right_arrow"
+            android:layout_centerVertical="true"
+            android:visibility="visible"
+            android:layout_height="20dp"/>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="24dp"
+            android:visibility="gone"
+            android:id="@+id/iv_down"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/up_arrow"
+            android:layout_centerVertical="true"
+            android:layout_height="24dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="12dp"
+        android:visibility="gone"
+        android:gravity="center"
+        android:id="@+id/change_pass_ll"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="24dp"
+            android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatEditText
+            style="@style/editText_Style"
+            android:hint="@string/old_password"
+            android:textColorHint="@color/border_color"
+            android:inputType="textPassword"
+            android:layout_marginEnd="12dp"
+            android:layout_marginStart="12dp"
+            android:fontFamily="@font/sspregular"
+            android:id="@+id/act_old_ps"/>
+
+            <CheckBox
+                 style="@style/checkbox_Style"
+                android:layout_marginEnd="24dp"
+                android:id="@+id/act_old_ps_check"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="12dp"
+            android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatEditText
+            style="@style/editText_Style"
+            android:hint="@string/new_password"
+            android:layout_marginEnd="12dp"
+            android:layout_marginStart="12dp"
+            android:textColorHint="@color/border_color"
+            android:inputType="textPassword"
+            android:id="@+id/act_new_ps"/>
+            <CheckBox
+                android:id="@+id/act_new_ps_check"
+                 style="@style/checkbox_Style"
+                android:layout_marginEnd="24dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="12dp"
+            android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatEditText
+            style="@style/editText_Style"
+            android:hint="@string/confirm_password"
+            android:layout_marginEnd="12dp"
+            android:layout_marginStart="12dp"
+            android:textColorHint="@color/border_color"
+            android:inputType="textPassword"
+            android:id="@+id/act_confirm_ps"/>
+            <CheckBox
+                android:id="@+id/act_confirm_ps_check"
+                 style="@style/checkbox_Style"
+                android:layout_marginEnd="24dp" />
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="150dp"
+            style="@style/Button_Style"
+            android:layout_marginTop="48dp"
+            android:text="Save"
+            android:onClick="savePass"
+            android:id="@+id/acct_save_pass"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <View style="@style/view_Style"/>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="12dp"
+        android:id="@+id/rl_phone"
+        android:layout_marginTop="12dp"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:text="Change Phone Number"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:fontFamily="@font/sspregular"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="20dp"
+            android:id="@+id/iv_right_p"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/right_arrow"
+            android:layout_centerVertical="true"
+            android:visibility="visible"
+            android:layout_height="20dp"/>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="24dp"
+            android:visibility="gone"
+            android:id="@+id/iv_down_p"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/up_arrow"
+            android:layout_centerVertical="true"
+            android:layout_height="24dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="12dp"
+        android:visibility="gone"
+        android:gravity="center"
+        android:id="@+id/change_phone_ll"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/round_border"
+            android:layout_marginEnd="12dp"
+            android:gravity="center|left"
+            android:layout_marginStart="12dp"
+            android:layout_height="45dp">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_height="40dp"
+                android:layout_width="wrap_content"
+                android:hint="+1"
+                android:paddingStart="12sp"
+                android:gravity="center"
+                android:paddingEnd="12sp"
+                android:focusable="false"
+                android:textColorHint="@color/border_color"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:background="@null"
+                android:id="@+id/act_Cphone" />
+            <View
+                android:layout_width="0.5dp"
+                android:background="@color/colorPrimary"
+                android:layout_height="match_parent"/>
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:hint="@string/enter_new_phone_number"
+                android:textColorHint="@color/border_color"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:paddingStart="12sp"
+                android:paddingEnd="12sp"
+                android:textColor="@color/black"
+                android:layout_height="40dp"
+                android:padding="0dp"
+                android:background="@null"
+                android:id="@+id/act_phone" />
+        </LinearLayout>
+
+
+
+        <Button
+            android:layout_width="150dp"
+            android:onClick="phoneSave"
+            style="@style/Button_Style"
+            android:id="@+id/act_phone_btn"
+            android:layout_marginTop="48dp"
+            android:text="Save"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <View
+       style="@style/view_Style"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="12dp"
+        android:id="@+id/rl_address"
+        android:layout_marginTop="12dp"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:text="@string/change_address"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:fontFamily="@font/sspregular"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="20dp"
+            android:id="@+id/iv_right_ad"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/right_arrow"
+            android:layout_centerVertical="true"
+            android:visibility="visible"
+            android:layout_height="20dp"/>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="24dp"
+            android:visibility="gone"
+            android:id="@+id/iv_down_ad"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/up_arrow"
+            android:layout_centerVertical="true"
+            android:layout_height="24dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="12dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:id="@+id/change_address_ll"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatEditText
+            style="@style/editText_Style"
+            android:hint="@string/street"
+            android:textColorHint="@color/border_color"
+            android:inputType="text"
+            android:id="@+id/et_street"
+            android:layout_marginEnd="12dp"
+            android:layout_marginStart="12dp"/>
+        <androidx.appcompat.widget.AppCompatEditText
+            style="@style/editText_Style"
+            android:hint="@string/apartment"
+            android:layout_marginEnd="12dp"
+            android:layout_marginStart="12dp"
+            android:id="@+id/et_apartment"
+            android:layout_marginTop="12dp"
+            android:textColorHint="@color/border_color"
+            android:inputType="text"/>
+        <androidx.appcompat.widget.AppCompatEditText
+            style="@style/editText_Style"
+            android:layout_width="match_parent"
+            android:hint="@string/city"
+            android:layout_marginEnd="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:id="@+id/et_city"
+            android:textColorHint="@color/border_color"
+            android:inputType="text"/>
+        <androidx.appcompat.widget.AppCompatEditText
+            style="@style/editText_Style"
+            android:layout_width="match_parent"
+            android:hint="@string/country"
+            android:drawableRight="@drawable/ic_keyboard_arrow_down_black_24dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:id="@+id/et_country"
+            android:textColorHint="@color/border_color"
+            android:inputType="text"
+            android:focusable="false"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            style="@style/editText_Style"
+            android:layout_width="match_parent"
+            android:hint="@string/state"
+            android:drawableRight="@drawable/ic_keyboard_arrow_down_black_24dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginStart="12dp"
+            android:id="@+id/et_state"
+            android:layout_marginTop="12dp"
+            android:textColorHint="@color/border_color"
+            android:inputType="text"
+            android:focusable="false"/>
+        <androidx.appcompat.widget.AppCompatEditText
+            style="@style/editText_Style"
+            android:hint="@string/postal_code"
+            android:layout_marginEnd="12dp"
+            android:layout_marginStart="12dp"
+            android:id="@+id/et_postalcode"
+            android:layout_marginTop="12dp"
+            android:textColorHint="@color/border_color"
+            android:inputType="number"/>
+
+
+        <Button
+            android:layout_width="150dp"
+            style="@style/Button_Style"
+            android:layout_marginTop="48dp"
+            android:text="@string/save"
+            android:onClick="changeAddress"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <View
+        style="@style/view_Style"/>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

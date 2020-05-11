@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "363938239652",
+    "firebase_url": "https://capostille-466cc.firebaseio.com",
+    "project_id": "capostille-466cc",
+    "storage_bucket": "capostille-466cc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:363938239652:android:27299a527d7e30f258c231",
+        "android_client_info": {
+          "package_name": "com.capostille.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "363938239652-8rtdar8lfoe88td5m6o2dmcseksl10n1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.capostille.android",
+            "certificate_hash": "aa5b487e61a405a347e80c037268548ae65b6173"
+          }
+        },
+        {
+          "client_id": "363938239652-mkcuvpkdvhvbiuop31angcqiahin1oqm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5q9HNHwZ2cKCV0Y3xr7cTEApNWNv_rXU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "363938239652-mkcuvpkdvhvbiuop31angcqiahin1oqm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
