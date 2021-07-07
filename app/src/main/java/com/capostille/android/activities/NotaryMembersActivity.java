@@ -127,7 +127,10 @@ public class NotaryMembersActivity extends AppCompatActivity {
                 } else {
                     tv_notary_notfound.setVisibility(View.GONE);
                 }
-                for (int i = 0; i < ja.length(); i++) {
+
+
+                for (int i = 0; i < ja.length(); i++)
+                {
                     JSONObject json = ja.getJSONObject(i);
                     String saasUserId = json.optString("saasUserId");
                     String roleId = json.optString("roleId");

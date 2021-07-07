@@ -219,7 +219,7 @@ public class ProfileActivity extends AppCompatActivity implements SaveView
         okhttp3.Request request = null;
 
         request = new okhttp3.Request.Builder()
-                .url("https://notaryapi.herokuapp.com/profilechange?saasUserId="+id)
+                .url(ApiConstants.BaseUrl+"profilechange?saasUserId="+id)
                 .header("Content-Type","application/json; charset=utf-8")
                 .addHeader("Authorization", "Bearer "+token)
                 .post(body)

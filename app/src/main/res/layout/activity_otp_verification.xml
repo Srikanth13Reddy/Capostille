@@ -14,7 +14,7 @@
         android:layout_height="match_parent">
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="match_parent"
-            android:src="@drawable/otp_verification"
+            android:src="@drawable/otpverification"
             android:layout_height="300dp"/>
 
         <androidx.appcompat.widget.AppCompatTextView

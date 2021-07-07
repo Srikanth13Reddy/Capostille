@@ -19,6 +19,13 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatEditText;
 
+import com.android.volley.AuthFailureError;
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
 import com.capostille.android.R;
 import com.capostille.android.firebase.Config;
 import com.capostille.android.interfaces.SaveView;
@@ -30,6 +37,9 @@ import com.google.firebase.iid.FirebaseInstanceId;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.lang.ref.ReferenceQueue;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -295,4 +305,6 @@ public class LoginActivity extends AppCompatActivity implements SaveView
             }
         }
     }
+
+
 }

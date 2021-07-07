@@ -29,7 +29,7 @@ import java.util.TimeZone;
 
 public class ApiConstants
 {
-    public static final String BaseUrl="https://notaryapi.herokuapp.com/";
+    public static final String BaseUrl="https://capostilleapi.capostille.us/";
 
    public static ProgressDialog showProgressDialog(Context context,String message)
     {
@@ -110,7 +110,7 @@ public class ApiConstants
             //This indicates that the reuest has either time out or there is no connection
         } else if (error instanceof TimeoutError ) {
             //Error indicating that there was an Authentication Failure while performing the request
-            Toast.makeText(context, "Poor internet", Toast.LENGTH_SHORT).show();
+            Toast.makeText(context, "Poor internet connection", Toast.LENGTH_SHORT).show();
         } else if (error instanceof ServerError) {
             //Indicates that the server responded with a error response
             Toast.makeText(context, "Server error", Toast.LENGTH_SHORT).show();

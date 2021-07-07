@@ -84,7 +84,7 @@ public class NotaryMembersAdapter extends RecyclerView.Adapter<NotaryMembersAdap
         AppCompatTextView tv_address_notary= v.findViewById(R.id.tv_address_notary);
         tv_address_notary.setText(obj.getFullAddress());
         tv_mobile_notary.setText(obj.getPhoneNumber());
-        // tv_name_notary.setText(ApiConstants.toTitleCase(obj.getName()));
+         tv_name_notary.setText(ApiConstants.toTitleCase(obj.getName()));
         tv_email_notary.setText(obj.getEmail());
 
         if (obj.getCountryCode().contains("+"))

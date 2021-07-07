@@ -87,7 +87,7 @@ public class InprogressAdapter extends RecyclerView.Adapter<InprogressAdapter.My
             requestlist.addAll(arraylist);
         } else {
             for (RequestModel wp : arraylist) {
-                if (wp.getName().toLowerCase(Locale.getDefault()).contains(charText)) {
+                if (wp.getName().toLowerCase(Locale.getDefault()).contains(charText)||wp.getRequestCode().toLowerCase(Locale.getDefault()).contains(charText)) {
                     requestlist.add(wp);
                 }
             }

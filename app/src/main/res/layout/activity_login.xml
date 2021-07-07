@@ -49,9 +49,6 @@
                     style="@style/checkbox_Style"
                     android:id="@+id/log_checkBox"/>
             </RelativeLayout>
-
-
-
             <Button
                 android:layout_width="match_parent"
                 style="@style/Button_Style"
@@ -76,11 +73,11 @@
     </androidx.core.widget.NestedScrollView>
 
 
- <androidx.appcompat.widget.AppCompatImageView
-     android:layout_width="match_parent"
-     app:srcCompat="@mipmap/loin_img"
-     android:layout_marginBottom="24dp"
-     android:layout_alignParentBottom="true"
-     android:layout_height="200dp"/>
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        app:srcCompat="@mipmap/loin_img"
+        android:layout_marginBottom="24dp"
+        android:layout_alignParentBottom="true"
+        android:layout_height="200dp"/>
 
 </RelativeLayout>
